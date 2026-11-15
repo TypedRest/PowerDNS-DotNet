@@ -21,10 +21,10 @@
     <Description>Client library for the PowerDNS API</Description>
     <Authors>Bastian Eicher</Authors>
     <PackageTags>PowerDNS API Client</PackageTags>
-    <PackageProjectUrl>https://github.com/TypedRest/PowerDns.Client</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/TypedRest/PowerDNS-DotNet</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/TypedRest/PowerDns.Client</RepositoryUrl>
-    <PackageReleaseNotes>https://github.com/TypedRest/PowerDns.Client/releases/tag/$(Version)</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/TypedRest/PowerDNS-DotNet</RepositoryUrl>
+    <PackageReleaseNotes>https://github.com/TypedRest/PowerDNS-DotNet/releases/tag/$(Version)</PackageReleaseNotes>
     <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>

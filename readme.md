@@ -1,7 +1,7 @@
-# PowerDNS Client
+# PowerDNS .NET Client
 
 [![NuGet](https://img.shields.io/nuget/v/PowerDns.Client.svg)](https://www.nuget.org/packages/PowerDns.Client/)
-[![Build](https://github.com/TypedRest/OpenServiceBroker/workflows/Build/badge.svg?branch=master)](https://github.com/TypedRest/PowerDns.Client/actions?query=workflow%3ABuild)
+[![Build](https://github.com/TypedRest/OpenServiceBroker/workflows/Build/badge.svg?branch=master)](https://github.com/TypedRest/PowerDNS-DotNet/actions?query=workflow%3ABuild)
 [![API documentation](https://img.shields.io/badge/api-docs-orange.svg)](https://powerdns.typedrest.net/)
 
 This project provides a .NET client library for the [PowerDNS](https://www.powerdns.com/) API.
