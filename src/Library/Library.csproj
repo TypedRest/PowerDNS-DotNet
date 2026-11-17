@@ -4,7 +4,7 @@
   <PropertyGroup>
     <AssemblyName>PowerDns.Client</AssemblyName>
     <RootNamespace>PowerDns.Client</RootNamespace>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>15.0</LangVersion>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
@@ -34,7 +34,7 @@
   <!-- Dependencies -->
   <ItemGroup>
     <PackageReference Include="TypedRest" Version="1.7.4" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="10.0.404" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="11.0.100" PrivateAssets="All" />
   </ItemGroup>
 
 </Project>
