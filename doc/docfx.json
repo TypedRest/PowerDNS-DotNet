@@ -3,9 +3,8 @@
     {
       "src": [
         {
-          "src": "../src",
-          "files": ["*/*.csproj"],
-          "exclude": ["UnitTests/*"]
+          "src": "../artifacts/Release/netstandard2.0",
+          "files": ["PowerDns.Client.dll"]
         }
       ],
       "dest": "api",
