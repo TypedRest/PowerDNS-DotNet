@@ -7,14 +7,9 @@ namespace PowerDns.Client.Models
     /// Represents an canonical name which ensures a trailing dot.
     /// </summary>
     [JsonConverter(typeof(CanonicalNameJsonConverter))]
-    public class CanonicalName : IEquatable<CanonicalName>
+    public class CanonicalName(string name) : IEquatable<CanonicalName>
     {
-        private readonly string _name;
-
-        public CanonicalName(string name)
-        {
-            _name = EnsureTrailingDot(name ?? throw new ArgumentNullException(nameof(name)));
-        }
+        private readonly string _name = EnsureTrailingDot(name ?? throw new ArgumentNullException(nameof(name)));
 
         private static string EnsureTrailingDot(string str) => str.EndsWith(".") ? str : str + ".";
 

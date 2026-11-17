@@ -7,12 +7,8 @@ namespace PowerDns.Client
     /// <summary>
     /// Represents a collection of DNS zones on a PowerDNS server.
     /// </summary>
-    public class ZoneCollectionEndpoint : CollectionEndpoint<Zone>
+    public class ZoneCollectionEndpoint(IEndpoint referrer) : CollectionEndpoint<Zone>(referrer, relativeUri: "./zones")
     {
-        public ZoneCollectionEndpoint(IEndpoint referrer)
-            : base(referrer, relativeUri: "./zones")
-        {}
-
         public override ElementEndpoint<Zone> this[string id] => new ElementEndpoint<Zone>(this, $"./{new CanonicalName(id)}");
     }
 }

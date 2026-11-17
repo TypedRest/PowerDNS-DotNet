@@ -8,12 +8,8 @@ namespace PowerDns.Client
     /// <summary>
     /// Represents a specific server managed by an instance of the PowerDNS API.
     /// </summary>
-    public class ServerElementEndpoint : EndpointBase, IServerElementEndpoint
+    public class ServerElementEndpoint(IEndpoint referrer, Uri relativeUri) : EndpointBase(referrer, relativeUri), IServerElementEndpoint
     {
-        public ServerElementEndpoint(IEndpoint referrer, Uri relativeUri)
-            : base(referrer, relativeUri)
-        {}
-
         public ICollectionEndpoint<Zone> Zones => new ZoneCollectionEndpoint(this);
     }
 }
